@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="frame">
+
+    <nav class="navigator">
+        <h3 class="site-name">@JiwooLee</h3>
+
+        <ul>
+            <li><a class="nav-menu" href="#about">ABOUT</a></li>
+            <li><a class="nav-menu" href="https://github.com/JiwooLee211" target="_blank">PROJECTS</a></li>
+            <li><a class="nav-menu" href="#contact" >CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard">
+        <h1>
+            <span id="typing1"></span><br><br>
+
+            <span class="typing-line">
+                <span class="highlight" id="typing2"></span>
+                <span id="typing3"></span>
+                <img src="tree.png" class="tree-icon" id="treeIcon">
+            </span>
+
+        </h1>
+        
+    </div>
+
+    <div class="profile">
+    <div class="slider">
+        <button class="slide-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+
+        <img class="profile-pic active" src="pic.jpg" alt="사진1">
+        <img class="profile-pic" src="pic2.jpg" alt="사진2">
+        
+
+        <button class="slide-btn next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="intro" id="about">
+        <h2>ABOUT ME</h2>
+        <p class="about-detail">
+            2004.02.11 출생<br>
+            동덕여자대학교 데이터사이언스전공 재학<br><br>
+            데이터를 이해하는 개발자를 꿈꾸며 다양한 경험을 통해 성장하고 있습니다.
+        </p>
+
+        <h3 class="keyword-title">KEYWORDS</h3>
+
+        <div class="keywords">
+            <span>#ISTJ</span>
+            <span>#Data</span>
+            <span>#Growth</span>
+            <span>#Responsibility</span>
+            <span>#Curiosity</span>
+            <span>#Challenge</span>
+    </div>
+
+        <h2>CAPABILITY</h2>
+        <p id="capability">
+            Data Analysis<br>
+            Machine Learning<br>
+            Data Visualization
+        </p>
+    </div>
+</div>
+
+
+    <h5 class="value-menu">MY VALUES</h5>
+
+    <div class="value-section">
+        <div class="value">
+            <img class="value-icon" src="heart.png">
+            <div class="value-intro">
+                <h4 class ="value-name">Responsibility</h4>
+                <p class="value-exp">맡은 일을 끝까지 책임지고 해결하려는 태도를 중요하게 생각합니다. </p>
+
+            </div>
+        </div>
+        
+        <div class="value">
+            <img class="value-icon" src="heart.png">
+            <div class="value-intro">
+                <h4 class ="value-name">Growth</h4>
+                <p class="value-exp">성장하기 위해 새로운 도전을 두려워하지 않습니다.</p>
+
+            </div>
+        </div>
+        <div class="value">
+            <img class="value-icon" src="heart.png">
+            <div class="value-intro">
+                <h4 class ="value-name">Data-driven</h4>
+                <p class="value-exp">데이터를 기반으로 문제를 분석하고 더 나은 해결 방법을 찾고자 합니다.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <h5 class="interest-menu">MY INTERESTS</h5>
+
+    <div class="interest-section">
+
+        <div class="interest-card">
+            <img class="interest-pic" src="alex.jpg" alt="강아지 사진">
+
+            <div class="interest-intro">
+                <h4 class="interest-name">Animals</h4>
+                <p class="interest-exp">
+                    동물들을 좋아하고 특히 저의 강아지와 시간 보내는 것을 좋아합니다. <br>강아지 이름은 알렉스입니다!
+                </p>
+            </div>
+        </div>
+
+        <div class="interest-card">
+            <img class="interest-pic" src="trip.jpg" alt="여행 사진">
+
+            <div class="interest-intro">
+                <h4 class="interest-name">Travel & Photography</h4>
+                <p class="interest-exp">
+                    여행을 다니며 사진 찍는 것을 좋아합니다.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <footer class="footer" id="contact">
+        <h3 class="contact">CONTACT ME</h3>
+        <div class="links">
+            <a href="mailto:dorosi211@gmail.com">
+                <img src="email.png" class="contact-icon" >
+            </a>
+
+             <a href="https://blog.naver.com/jivvooo" target="_blank" rel="noopener noreferrer" >
+                <img src="blog.png" class="contact-icon" >
+            </a>
+
+            <a href="https://github.com/JiwooLee211"target="_blank" rel="noopener noreferrer">
+                <img src="github.png" class="contact-icon" >
+            </a>
+        </div>
+    
+
+
+    </footer>
+ 
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>

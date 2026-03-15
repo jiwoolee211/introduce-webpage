@@ -1,0 +1,363 @@
+body{
+    background-color: rgb(218,239,246);
+}
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    display: inline;
+    align-self: center;
+    margin-left: 15px;
+}
+
+ul{
+    margin: 0;
+}
+
+.site-name{
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(80, 89, 90);
+}
+
+.nav-menu{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+.dashboard{
+    margin-top: 100px;
+    min-height: 50vh;
+}
+
+.dashboard h1{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.4;
+    
+}
+
+.highlight{
+    font-weight: 700;
+    color: rgb(59, 125, 150);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.contact{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight:500 ;
+    color:rgb(80, 89, 90);
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+
+}
+.links>a{
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+
+.intro>h2{
+    margin: 0px;
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+#capability{
+    font-family:"Noto Sans KR", sans-serif ;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.intro>.about-detail{
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.about-detail{
+    margin-bottom: 60px;
+}
+
+.value-menu{
+    font-family:"Noto Sans KR", sans-serif ;
+    font-size: 35px;
+    margin:30px 150px;
+
+}
+
+.value-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin:100px  150px;
+    margin-top: 20px;
+}
+
+.value{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.value-icon{
+    width: 100px;
+    height:100px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+    margin-top: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.value-icon:hover{
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.value-intro{
+    margin-left: 40px;
+}
+
+.value-name{
+    font-family:"Noto Sans KR", sans-serif ;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.value-exp{
+    font-family:"Noto Sans KR", sans-serif ;
+    font-weight: 400;
+    font-size :18px;
+    margin: 0px;
+    line-height: 30px;
+}
+
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 100px 100px;
+    gap: 120px;
+}
+
+.slider{
+    position: relative;
+    width: 420px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic{
+    width: 420px;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.profile-pic.active{
+    display: block;
+}
+
+.slide-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    border: none;
+    font-size: 24px;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev{
+    left: -20px;
+}
+
+.next{
+    right: -20px;
+}
+
+.slide-btn:hover{
+    background-color: white;
+}
+
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0;}
+    100%{opacity:1;}
+}
+
+.typing-line{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tree-icon{
+    width: 100px;
+    height: 100px;
+    display: none;
+    animation: treeMove 2s infinite ease-in-out;
+}
+
+@keyframes treeMove{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-4px);}
+    100%{transform:translateY(0);}
+}
+
+
+.contact-icon:hover{
+    transform: scale(1.15);
+}
+.contact-icon{
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.keyword-title{
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.keywords{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+.keywords span{
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 16px;
+    padding: 6px 14px;
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(59, 125, 150);
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.keywords span:hover{
+    transform: translateY(-2px);
+    background-color: rgb(59, 125, 150);
+    color: white;
+    transition: 0.2s;
+}
+
+.interest-menu{
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 35px;
+    margin: 30px 150px;
+}
+
+.interest-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 150px 80px 150px;
+}
+
+.interest-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 25px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interest-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.interest-pic{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    flex-shrink: 0;
+}
+
+.interest-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.interest-name{
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 14px 0;
+}
+
+.interest-exp{
+    font-family:"Noto Sans KR", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
